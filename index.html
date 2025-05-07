@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio website with animations and modern design">
+    <title>Professional Portfolio | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Typed.js for typing animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo" data-aos="fade-right" data-aos-delay="100">
+                <a href="index.html">
+                    <i class="fas fa-code logo-icon"></i>
+                    <span class="logo-text">PORTFOLIO</span>
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1 data-aos="fade-up">Welcome to My Portfolio</h1>
+                <p class="subtitle" data-aos="fade-up" data-aos-delay="200">I'm a <span class="typed-text" data-typed-items='["Web Developer", "UI/UX Designer", "Creative Coder", "Problem Solver"]'></span></p>
+                <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#portfolio" class="button primary">View My Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="button secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="zoom-in" data-aos-delay="600">
+                <img src="images/hero-image.png" alt="Developer Illustration" class="hidden-mobile">
+                <div class="hero-animated-element">
+                    <div class="code-element">
+                        <div class="code-line"><span class="code-keyword">function</span> <span class="code-function">createWebsite</span>() {</div>
+                        <div class="code-line">  <span class="code-keyword">const</span> <span class="code-variable">design</span> = <span class="code-string">"modern"</span>;</div>
+                        <div class="code-line">  <span class="code-keyword">const</span> <span class="code-variable">features</span> = [<span class="code-string">"responsive"</span>, <span class="code-string">"animated"</span>];</div>
+                        <div class="code-line">  <span class="code-keyword">return</span> <span class="code-variable">buildAwesomeSite</span>(design, features);</div>
+                        <div class="code-line">}</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>My Services</h2>
+                    <p>What I can do for you</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Creating responsive, modern websites with clean code and optimal performance.</p>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>Designing intuitive user interfaces with great user experience and visual appeal.</p>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Development</h3>
+                        <p>Building cross-platform mobile applications that work seamlessly on all devices.</p>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>SEO Optimization</h3>
+                        <p>Improving website visibility and search engine rankings for better traffic.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>My Portfolio</h2>
+                    <p>Recent projects I've worked on</p>
+                </div>
+                
+                <div class="portfolio-filters" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="app">App</button>
+                </div>
+                
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="web" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="portfolio-img">
+                            <img src="images/portfolio-1.jpg" alt="E-commerce Website">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>E-commerce Website</h3>
+                            <p>Web Development</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="design" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="portfolio-img">
+                            <img src="images/portfolio-2.jpg" alt="Brand Identity Design">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Brand Identity</h3>
+                            <p>UI/UX Design</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="app" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="portfolio-img">
+                            <img src="images/portfolio-3.jpg" alt="Fitness App">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Fitness App</h3>
+                            <p>Mobile Development</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="web" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="portfolio-img">
+                            <img src="images/portfolio-4.jpg" alt="Restaurant Website">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Restaurant Website</h3>
+                            <p>Web Development</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3><span class="counter-value" data-target="120">0</span>+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3><span class="counter-value" data-target="85">0</span>+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3><span class="counter-value" data-target="5">0</span>+</h3>
+                        <p>Years of Experience</p>
+                    </div>
+                    
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="stat-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3><span class="counter-value" data-target="15">0</span>+</h3>
+                        <p>Awards Received</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image" data-aos="fade-right">
+                        <img src="images/about-image.jpg" alt="Profile Picture">
+                    </div>
+                    
+                    <div class="about-content" data-aos="fade-left">
+                        <div class="section-header">
+                            <h2>About Me</h2>
+                            <p>My journey and expertise</p>
+                        </div>
+                        
+                        <p>I'm a passionate web developer and designer with over 5 years of experience creating beautiful, functional websites and applications. I specialize in front-end development, responsive design, and creating intuitive user experiences.</p>
+                        
+                        <p>My approach combines technical expertise with creative problem-solving to deliver solutions that not only look great but also perform exceptionally well.</p>
+                        
+                        <div class="skills">
+                            <div class="skill">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%" data-aos="slide-right" data-aos-delay="100"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%" data-aos="slide-right" data-aos-delay="200"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill">
+                                <span class="skill-name">React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%" data-aos="slide-right" data-aos-delay="300"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill">
+                                <span class="skill-name">UI/UX Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%" data-aos="slide-right" data-aos-delay="400"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#contact" class="button primary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Get In Touch</h2>
+                    <p>Let's work together</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3>Location</h3>
+                                <p>New York City, NY, USA</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <p>contact@example.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links-large">
+                            <a href="#" class="social-link" data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link" data-aos="zoom-in" data-aos-delay="200"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link" data-aos="zoom-in" data-aos-delay="300"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link" data-aos="zoom-in" data-aos-delay="400"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container" data-aos="fade-left">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="button primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-code logo-icon"></i>
+                <span class="logo-text">PORTFOLIO</span>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>UI/UX Design</li>
+                        <li>Mobile Development</li>
+                        <li>SEO Optimization</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+    <!-- Dark Mode Toggle Button -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+</body>
+</html>
